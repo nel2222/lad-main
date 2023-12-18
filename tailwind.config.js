@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        first: ["Nunito Sans"],
+        first: ["Nunito Sans"]
       },
     },
   },
