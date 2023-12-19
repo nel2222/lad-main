@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="./assests/MBW.webp" type="Image/x-icon" />
+    <title>MB Logistics</title>
+    <!-- Add your other meta tags, links, and scripts here -->
+    <style>
+      @media screen and (max-width: 640px) {
+        .mobile-menu {
+          display: none;
+        }
+        .mobile-menu.active {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-sm font-first max-w-[100vw] overflow-x-hidden w-[100vw]">
+    <!-- NAVBAR -->
+    <header>
+      <nav
+        class="flex justify-between items-center py-5 px-4 bg-gray-400 tracking-wider sm:px-8"
+      >
+        <div>
+          <img src="./assests/MBNB.webp" alt="logo" class="w-14" />
+        </div>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="lg:hidden">
+          <button id="mobileMenuBtn" class="focus:outline-none pr-3">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="hidden lg:flex items-center space-x-12 font-normal">
+          <a
+            href="index.html"
+            class="hover:underline decoration-1 cursor-pointer"
+            >Home</a
+          >
+          <a
+            href="test.html"
+            class="hover:underline decoration-1 cursor-pointer"
+            >Test</a
+          >
+          <a
+            href="service.html"
+            class="hover:underline hover:text-color-red decoration-1 cursor-pointer"
+            >Our Services</a
+          >
+          <a
+            href="hse.html"
+            class="hover:underline hover:text-color-red decoration-1"
+            >HSE</a
+          >
+          <a
+            href="about.html"
+            class="hover:underline hover:text-color-red decoration-1"
+            >About Us</a
+          >
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="mobile-menu lg:hidden h-44 ml-1 mr-3 mt-[4px] bg-gray-900 bg-opacity-75 text-white absolute w-[90vw] z-10 right-4"
+      >
+        <ul
+          class="flex flex-col items-center space-y-4 font-normal pt-3 cursor-pointer underline"
+        >
+          <a
+            href="index.html"
+            class="hover:underline decoration-1 cursor-pointer"
+            >Home</a
+          >
+          <a
+            href="test.html"
+            class="hover:underline decoration-1 cursor-pointer"
+            >Test</a
+          >
+          <a
+            href="service.html"
+            class="hover:underline hover:text-color-red decoration-1 cursor-pointer"
+            >Our Services</a
+          >
+          <a
+            href="hse.html"
+            class="hover:underline hover:text-color-red decoration-1"
+            >HSE</a
+          >
+          <a
+            href="about.html"
+            class="hover:underline hover:text-color-red decoration-1"
+            >About Us</a
+          >
+        </ul>
+      </div>
+
+      <script>
+        document
+          .getElementById("mobileMenuBtn")
+          .addEventListener("click", function () {
+            document.getElementById("mobileMenu").classList.toggle("active");
+          });
+      </script>
+    </header>
+  </body>
+</html>
