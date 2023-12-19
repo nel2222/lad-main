@@ -965,6 +965,10 @@ video {
   height: 29.75rem;
 }
 
+.h-\[19\.75rem\]{
+  height: 19.75rem;
+}
+
 .w-14{
   width: 3.5rem;
 }
@@ -1781,6 +1785,14 @@ video {
 
   .md\:w-\[96rem\]{
     width: 96rem;
+  }
+
+  .md\:w-\[100rem\]{
+    width: 100rem;
+  }
+
+  .md\:w-\[120rem\]{
+    width: 120rem;
   }
 
   .md\:grid-cols-2{
