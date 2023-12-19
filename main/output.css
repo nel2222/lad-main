@@ -805,6 +805,14 @@ video {
   margin-right: 0.75rem;
 }
 
+.ml-3{
+  margin-left: 0.75rem;
+}
+
+.ml-11{
+  margin-left: 2.75rem;
+}
+
 .block{
   display: block;
 }
